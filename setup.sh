@@ -1,4 +1,13 @@
-cd ./rn65/ios && yarn && cd ../..
-cd ./rn64/ios && yarn && cd ../..
-cd ./rn63/ios && yarn && cd ../..
-cd ./rn62/ios && yarn && cd ../..
+#!/bin/bash
+
+versions=("rn65" "rn64" "rn63" "rn62")
+
+for index in {0..3}
+do 
+    cd ${versions[$index]}
+    cp ../react-native-reanimated-*.tgz ./react-native-reanimated.tgz
+    rm -rf node_modules && yarn
+    cd ios
+    pod deintegrate && pod install
+    cd ../../
+done
