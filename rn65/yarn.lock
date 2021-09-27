@@ -5201,10 +5201,9 @@ react-native-codegen@^0.0.7:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-reanimated@2.3.0-alpha.3:
+"react-native-reanimated@file:react-native-reanimated.tgz":
   version "2.3.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.3.0-alpha.3.tgz#022f5b4eaa847304a155942165a77125c86428bc"
-  integrity sha512-Ln+edkTrepKUETKKmGl+GxL8RiB7awBDQFcRJIK39m5ggiLfksOAfqzclpKPLWbAfOvB4cSg+QdowzRN570FXA==
+  resolved "file:react-native-reanimated.tgz#0a22e07f1421a3cb7b6de11eb59f35cd2d4c3193"
   dependencies:
     "@babel/plugin-transform-object-assign" "^7.10.4"
     invariant "^2.2.4"
@@ -5217,6 +5216,13 @@ react-native-screens@^3.4.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.6.0.tgz#054af728e50c06bff6b3b4fa7b4b656b70f247cd"
   integrity sha512-emQmSu+B6cOIjJH2OIgpuxd9zCD6xz7/oo5GCetyjsM5qR3sMnVgOxqtK99xPu9XJH/8k7MplXbtJgtk/PHXwA==
+  dependencies:
+    warn-once "^0.1.0"
+
+react-native-screens@^3.6.0:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.7.2.tgz#933cb0b6564b84a624a1e6ee0481e81415030ea9"
+  integrity sha512-TUmCE2ZIr6SFCUqsUqLsYQZ7EWo+tKyxSVFj3G5BCkGFOl3MwXEPgT/ihNCnL1aUAgr6TEMWVHg+awLkkQgYyQ==
   dependencies:
     warn-once "^0.1.0"
 
