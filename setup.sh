@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 versions=("rn65" "rn64" "rn63" "rn62")
 
 for index in {0..3}
