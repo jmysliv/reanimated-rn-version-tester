@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-versions=("rn65" "rn64" "rn63" "rn62")
+versions=("rn66" "rn65" "rn64" "rn63")
 
 for index in {0..3}
 do
