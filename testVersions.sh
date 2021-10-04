@@ -20,11 +20,11 @@ ios_succeeded=$(cat logs | grep "BUILD SUCCEEDED" -c)
 
 if [ "$andoid_successful" != "4" ]; then
     echo "Android build failed. Check logs to get more info."
-    echo $(cat logs)
+    echo $(cat $logfile)
     exit 1
 else if [ "$ios_succeeded" != "4"]; then
     echo "IOS build failed. Check logs to get more info."
-    echo $(cat logs)
+    echo $(cat $logfile)
     exit 1
 fi
 
