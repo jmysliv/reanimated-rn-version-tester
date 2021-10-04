@@ -3,6 +3,7 @@ set -e
 versions=("rn66" "rn65" "rn64" "rn63")
 directory=$(pwd)
 logfile="${directory}/logs"
+echo "$logfile"
 
 for index in {0..3}
 do
@@ -16,6 +17,8 @@ do
 done
 
 android_successful=$(cat logs | grep "BUILD SUCCESSFUL" -c)
+echo $andoid_successful
+echo $ios_succeeded
 ios_succeeded=$(cat logs | grep "BUILD SUCCEEDED" -c)
 
 if [ "$andoid_successful" != "4" ]; then
