@@ -20,7 +20,7 @@ do
         echo "Android build failed. Check logs to get more info."
         echo $(cat $version_logfile)
         exit 1
-    elif [ "$ios_succeeded" != "1"]; then
+    elif [ "$ios_succeeded" != "1" ]; then
         echo "IOS build failed. Check logs to get more info."
         echo $(cat $version_logfile)
         exit 1
